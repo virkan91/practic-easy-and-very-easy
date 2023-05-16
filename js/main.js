@@ -32,7 +32,7 @@
 // 3. Найдите индекс
 
 // function findIndex(lst, str) {
-// 	for (let i = 1; i <= lst.length; i++) {
+// 	for (let i = 0; i <= lst.length; i++) {
 // 	    if (lst[i] == str) {
 // 	    return i;
 // 		}
@@ -56,6 +56,23 @@
     //   return sum;
     // }
     // console.log(sumArray([1, 2, 3, 4, 5]));
+
+// 5. Создайте функцию, которая ищет индекс данного элемента в массиве. 
+//Если элемент присутствует, он должен вернуть индекс, в противном случае он должен вернуть -1.
+
+
+
+    function search(arr, item) {
+     for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == item) {
+        return i;
+        }
+     }
+    return -1;
+    }
+    console.log(search([1, 2, 3, 4], 3));
+    console.log(search([2, 4, 6, 8, 10], 8));
+
 
 
 
